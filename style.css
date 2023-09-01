@@ -1,0 +1,17 @@
+body {
+    background: #E4E4D0;
+    padding: 0 24px;
+    margin: 0;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    width: 100px;
+    margin: 10px;
+    background-color: #94A684;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+  }

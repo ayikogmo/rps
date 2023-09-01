@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button id="rockButton">rock</button>
+    <button id="paperButton">paper</button>
+    <button id="scissorButton">scissor</button>
+ 
+<script>
+document.getElementById("rockButton").addEventListener("click", rock);
+document.getElementById("paperButton").addEventListener("click", paper);
+document.getElementById("scissorButton").addEventListener("click", scissor);
+
+
+text = "computer:"
+function rock() {
+    computerChoice = Math.floor(Math.random() * 3);
+    if (computerChoice == 0) {
+        alert(text + " rock \nit's a tie");
+    } else if (computerChoice == 1) {
+        alert(text + " paper \nyou lose");
+    } else if (computerChoice == 2) {
+        alert(text + " scissor \nyou win");
+    }
+}
+
+function paper() {
+    computerChoice = Math.floor(Math.random() * 3);
+    if (computerChoice == 0) {
+        alert(text + " rock \nyou win");
+    } else if (computerChoice == 1) {
+        alert(text + " paper \nit's a tie");
+    } else if (computerChoice == 2) {
+        alert(text + " scissor \nyou lose");
+    }
+}
+
+function scissor () {
+    computerChoice = Math.floor(Math.random() * 3);
+    if (computerChoice == 0) {
+        alert(text + " rock \nyou lose");
+    } else if (computerChoice == 1) {
+        alert(text + " paper \nyou win");
+    } else if (computerChoice == 2) {
+        alert(text + " scissor\nit's a tie");
+    }
+}
+
+
+
+</script>
+
+  </body>
+</html>
